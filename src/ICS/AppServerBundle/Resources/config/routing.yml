@@ -1,0 +1,13 @@
+_welcome:
+    pattern:  /
+    defaults: { _controller: ICSAppServerBundle:Welcome:index }
+
+_admin_secured:
+    resource: "@ICSAppServerBundle/Controller/SecuredController.php"
+    type:     annotation
+
+_demo:
+    resource: "@ICSAppServerBundle/Controller/DemoController.php"
+    type:     annotation
+    prefix:   /demo
+
